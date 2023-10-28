@@ -1,0 +1,89 @@
+body,html{
+  background: #000;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+#c{
+  background:#dd1010;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0; /* Setzt die Anfangstransparenz auf 0 */
+  transition: opacity 2s ease-in-out; /* 2 Sekunden Dauer, langsam zu Beginn und Ende */
+  z-index: 999;
+ 
+}
+
+body, html {
+  background: #000;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#c {
+  background: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 2s ease-in-out 2s;
+  font: 900 clamp(.875em, 7.25vw, 5em) 'Electrolize', sans-serif !important;
+  background: linear-gradient(90deg, hsl(0, 95%, 65%), hsl(90, 95%, 65%));
+  -webkit-background-clip: text;
+  background-clip: text;  /* Standard-Eigenschaft für Kompatibilität */
+  color: transparent;
+  filter: url(#f);
+  animation: k 4s linear infinite;
+}
+
+
+@keyframes k { to { --k: 1 } }
+
+
+.headers {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color: antiquewhite;
+  font: 900 clamp(0.875em, 7.25vw, 5em) 'Electrolize', sans-serif;
+  padding-bottom: 46px;
+}
+
+.img1 {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 271px;
+  height: 124px;
+  z-index: 1000;
+  padding-top: 130px;
+}
